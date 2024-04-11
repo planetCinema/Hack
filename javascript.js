@@ -8,7 +8,7 @@ function startWebcam() {
     })
     .then((stream) => {
       video.srcObject = stream;
-    })
-
+    });
+}
 
 startWebcam();
