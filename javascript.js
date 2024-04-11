@@ -14,4 +14,4 @@ function startWebcam() {
     });
 }
 
-function startWebcam();
+startWebcam();
