@@ -5,5 +5,5 @@ navigator.mediaDevices.getUserMedia({
   audio:false
 })
 .then((stream)=> {
-  video.srcObject = stream
+  video.srcObject = stream;
 });
