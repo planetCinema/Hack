@@ -1,9 +1,17 @@
 const video = document.getElementById("video");
 
-navigator.mediaDevices.getUserMedia({
-  video:true,
-  audio:false,
-})
-.then((stream)=> {
-  video.srcObject = stream;
-});
+function startWebcam() {
+  navigator.mediaDevices
+    .getUserMedia({
+      video: true,
+      audio: false,
+    })
+    .then((stream) => {
+      video.srcObject = stream;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+function startWebcam();
