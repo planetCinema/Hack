@@ -9,9 +9,6 @@ function startWebcam() {
     .then((stream) => {
       video.srcObject = stream;
     })
-    .catch((error) => {
-      console.error(error);
-    });
-}
+
 
 startWebcam();
